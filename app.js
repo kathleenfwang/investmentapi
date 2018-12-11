@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express(); 
-var mongoose = require('mongoose')
-var bodyParser = require('body-parser')
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+var secret = require('./secret');
  
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({extended: true})); 
  
 //mongoose.connect('mongodb://localhost/investments'); // connecting mongoose to investments datebase in mongo
-mongoose.connect('mongodb://kathleenfwang:pikachu1@ds147789.mlab.com:47789/investments');
+mongoose.connect('mongodb://' + secret.user + ':' + secret.password + ' @ds257752.mlab.com:57752/foodieblogpost');
 
 var  investmentSchema = new mongoose.Schema({
     date: String, 
