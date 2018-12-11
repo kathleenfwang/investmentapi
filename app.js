@@ -7,7 +7,7 @@ var secret = require('./secret');
 app.use(bodyParser.urlencoded({extended: true})); 
  
 //mongoose.connect('mongodb://localhost/investments'); // connecting mongoose to investments datebase in mongo
-mongoose.connect('mongodb://' + secret.user + ':' + secret.password + ' @ds257752.mlab.com:57752/foodieblogpost');
+mongoose.connect('mongodb://' + secret.user + ':' + secret.password + ' @ds147789.mlab.com:47789/investments');
 
 var  investmentSchema = new mongoose.Schema({
     date: String, 
