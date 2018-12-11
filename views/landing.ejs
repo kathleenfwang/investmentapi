@@ -1,0 +1,13 @@
+<% include ./partials/header %> 
+<h1> Portfoilio API </h1>
+
+<h2> <a href = '/investments/new'> Create a new investment </a>  </h2>
+<h2> <a href ='/investments'> View all current investments </a></h2>
+
+<form action = "/investments" method = "GET"> 
+View all investments at a date: 
+<input type ="date" name = "date"> 
+<button> Submit </button>
+</form>
+
+ <% include ./partials/footer %>

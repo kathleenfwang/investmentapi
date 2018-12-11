@@ -1,0 +1,19 @@
+<% include ./partials/header %> 
+<h1> Investments for <%= date %> </h1>
+<% investments.forEach(function(investment) { %> 
+<ul> 
+<li> <b> Date: </b> <%= investment.date %> </li>
+<li>  <b>Company: </b><%=  investment.company %></li>
+<li>  <b>Quantity:</b> <%= investment.quantity %> </li>
+ <li>  <b>Cost: </b><%= investment.cost %> </li>
+ </ul>
+  <button> <a href ="/investments/<%=investment._id%>/edit"> Edit </a> </button>
+   
+ 
+ <hr> 
+<% }) %> 
+ 
+ 
+ <button> <a href ="/"> Home </a> </button>
+ 
+ <% include ./partials/footer %>

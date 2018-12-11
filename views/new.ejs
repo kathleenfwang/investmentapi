@@ -1,0 +1,28 @@
+ <% include ./partials/header %> 
+<h1> New Investment </h1>
+ 
+
+<form action ="/investments" method ="POST" class ="ui form"> 
+    <div class="focus field">
+        <label> Today's date (year/month/day) </label>
+        <input type = "text" placeholder = "2018-01-01" name ="investment[date]">
+        </div> 
+        <div class="focus field">
+        <label> Company Name </label>
+    <input type ="text" placeholder ="company name" name ="investment[company]"> 
+    </div>
+    <div class="focus field">
+        <label> Quantity </label>
+    <input type ="text" placeholder ="number of shares held" name ="investment[quantity]"> 
+    </div>
+    <div class="focus field">
+    <label> Cost </label>
+    <input type ="text" placeholder ="total amount paid" name ="investment[cost]" class ="ui input focus">
+    </div>
+    
+    <button class ="ui basic button"> Submit!</button>
+</form>
+ 
+ <p> </p>
+ <button> <a href ="/"> Home </a></button>
+ <% include ./partials/footer %>
