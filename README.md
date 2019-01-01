@@ -1,4 +1,4 @@
-# Investment Portfolio API 
+# Investment Portfolio 
 Allows a user to create, view investments from a specific date or all dates, and update investments. 
 
 ## Live Demo
